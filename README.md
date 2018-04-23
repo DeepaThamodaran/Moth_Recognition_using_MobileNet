@@ -27,7 +27,7 @@ Parameters:
 
 > ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}"
 
-To Run tensorboard at background:
+To run tensorboard at background:
 
 > tensorboard --logdir tf_files/training_summaries &
 
@@ -35,7 +35,7 @@ To understand all supported arguments:
 
 > python -m scripts.retrain –h
 
-To Train:
+To train:
 
 > python -m scripts.retrain \
 --bottleneck_dir=tf_files/bottlenecks \
@@ -63,9 +63,9 @@ Step-6 Deactivate virtual environment:
 
 Step-1 Basic Requirements
 
-- You’ll need an iOS device like iPhone or iPad.
-- You’ll need to download and launch latest Xcode.
-- To execute the code in iOS device, you’ll need to enroll in the Apple iOS developer program which is $99/year and register your iPhone/iPad under ‘Accounts’ tab.
+- iOS device like iPhone or iPad.
+- Download latest Xcode.
+- Enroll in Apple iOS developer program which is $99/year and register your iPhone/iPad under ‘Accounts’ tab.
 
 Step-2 Virtual Environment Setup:
 
@@ -81,7 +81,7 @@ Step-2 Virtual Environment Setup:
 
 Step-3 Clone necessary repositories:
 
-Create a folder as iOS under main folder and clone below repositories inside
+Create a folder named iOS under main folder and clone below repositories in it
 
 > git clone -b master https://github.com/tf-coreml/tf-coreml
 
@@ -96,7 +96,7 @@ Step-4 CoreML model conversion
 - create a folder named "demo" under Moth_Recognition_using_MobileNet/iOS/tf-coreml/
 - Copy the generated retrained_labels.txt and retrained_graph.pb from /tf_files folder to /iOS/tf-coreml/demo/ folder
 - Move the Moth_Recognition_using_MobileNet/demo_MobileNet.py file to Moth_Recognition_using_MobileNet/iOS/tf-coreml/ folder
-- Execute below command:
+- Execute below commands:
 
 > cd Moth_Recognition_using_MobileNet/iOS/tf-coreml/tf-coreml
 
@@ -108,14 +108,14 @@ Step-5 Open MobileNetCamera.xcodeproj in Xcode
 
 Step-6 Build the Project:
 
-Run and compile the code using iPhone/iPad device. You will receive the message of ‘Build Successful’ and app will get launched in iPhone/iPad accessing your device camera.
+- Run and compile the code using iPhone/iPad device. 
+- App will be launched in your iPhone/iPad, accessing your mobile camera.
 
 Step-7 Validation:
 
-Point the iPhone/iPad camera to any trained moth picture/image, you will see the moth labels and its confidence level of close resemblance.
+Point the iPhone/iPad to any trained moth picture, you will see the moth labels and its confidence level of resemblance.
 
-![alt text](https://github.com/DeepaThamodaran/Moth_Recognition_using_MobileNet/blob/master/MobileNet_Image_validation.png)
-
+![alt text](https://github.com/DeepaThamodaran/Moth_Recognition_using_MobileNet/blob/master/MobileNet_RT_Validation.png)
 
 Step-8 Cleanup:
 
@@ -135,11 +135,11 @@ Please follow the links to get an understanding of all the features of each proj
 
 # Citation:
 
-Yolov2 :
+Tensorflow-for-Poets Google codelab:
 
-  @article{redmon2016yolo9000,
-  title={YOLO9000: Better, Faster, Stronger},
-  author={Redmon, Joseph and Farhadi, Ali},
-  journal={arXiv preprint arXiv:1612.08242},
-  year={2016}
+  @article{tensorflow-for-poets},
+  title={tensorflow-for-poets: codelabs},
+  author={Google-codelab},
+  site={https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0},
+  year={2017}
   }
