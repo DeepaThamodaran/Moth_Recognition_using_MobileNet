@@ -52,3 +52,5 @@ Step-5 Validate the network:
 > python -m scripts.label_image \
 --graph=tf_files/retrained_graph.pb  \
 --image=tf_files/moth_photos/lunamoth/luna_040.jpg
+
+![alt text](https://github.com/DeepaThamodaran/Moth_Recognition_using_MobileNet/blob/master/MobileNet_Image_validation.png)
