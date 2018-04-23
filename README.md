@@ -109,7 +109,7 @@ Step-5 Open MobileNetCamera.xcodeproj in Xcode
 Step-6 Build the Project:
 
 - Run and compile the code using iPhone/iPad device. 
-- App will be launched in your iPhone/iPad, accessing your mobile camera.
+- App will be launched in iPhone/iPad, accessing the device camera.
 
 Step-7 Validation:
 
@@ -125,7 +125,7 @@ Close the app and disconnect the device from Xcode.
 
 This project uses code from:
 
-https://github.com/thtrieu/darkflow: for the real-time object detections and classifications.
+https://github.com/googlecodelabs/tensorflow-for-poets-2: for the real-time object detections using MobileNet.
 
 https://github.com/tf-coreml/tf-coreml: for tensorFlow to CoreML convertion
 
@@ -135,11 +135,4 @@ Please follow the links to get an understanding of all the features of each proj
 
 # Citation:
 
-Tensorflow-for-Poets Google codelab:
-
-  @article{tensorflow-for-poets},
-  title={tensorflow-for-poets: codelabs},
-  author={Google-codelab},
-  site={https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0},
-  year={2017}
-  }
+Sergeev, A., & Del Balso, M. (2018). Horovod: fast and easy distributed deep learning in TensorFlow.
